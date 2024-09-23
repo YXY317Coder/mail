@@ -39,6 +39,9 @@ document.getElementById('blogin').disabled = true;
 		if (d1.trim === '' || d2.trim === ''){
 			alert("登陆失败！是不是有什么忘填了？");
 		}
+		else if (d3[d1 + '_password'] === 'null'){
+			alert("没有这个账号！");
+		}
 		else if (d3[d1 + '_password'] !== d2){
 			alert("用户名或密码错误！");
 		}
