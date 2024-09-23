@@ -36,7 +36,7 @@ document.getElementById('blogin').disabled = true;
 		var d1 = document.getElementById('naee').value;
 		var d2 = document.getElementById('phin').value;
 		var d3 = JSON.parse(pt('get',d1 + '_password'));
-		if (d1.trim === '' || d2.trim === ''){
+		if (d1.trim() === '' || d2.trim() === ''){
 			alert("登陆失败！是不是有什么忘填了？");
 		}
 		else if (d3[d1 + '_password'] === 'null'){
