@@ -36,8 +36,11 @@ document.getElementById('blogin').disabled = true;
 		var d1 = document.getElementById('naee').value;
 		var d2 = document.getElementById('phin').value;
 		var d3 = JSON.parse(pt('get',d1 + '_password'));
-		if (d3[d1 + '_password'] !== d2 || d3[d1 + '_password'] == '' || d3[d1 + '_password'] == null){
+		if (d3[d1 + '_password'] !== d2){
 			alert("用户名或密码错误！");
+		}
+		else if (d3[d1 + '_password'] == '' || d3[d1 + '_password'] == null){
+			alert("登陆失败！是不是有什么忘填了？");
 		}
 		else{
 			window.localStorage.setItem('nowname',d1);
