@@ -39,7 +39,7 @@ document.getElementById('blogin').disabled = true;
 		if (d3[d1 + '_password'] !== d2){
 			alert("用户名或密码错误！");
 		}
-		else if (d3[d1 + '_password'] == '' || d3[d1 + '_password'] == null){
+		else if (d3[d1 + '_password'] == '' || d3[d1 + '_password'] == null || d3[d1 + '_password'] == 'null'){
 			alert("登陆失败！是不是有什么忘填了？");
 		}
 		else{
