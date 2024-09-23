@@ -62,7 +62,7 @@ document.getElementById('blogin').disabled = true;
 				d5['ID_count'] = Number(d5['ID_count']) + 1;
 				d5['ID_count'] = String(d5['ID_count']);
 				var d6 = JSON.parse(pt('update',d1 + '_ID',d5['ID_count']));
-				var d7 = JSON.parse(pt('update','ID_count',d5[ID_count]))
+				var d7 = JSON.parse(pt('update','ID_count',d5['ID_count']))
 				if (d4['status'] === 'success' && d6['status'] === 'success' && d6['status'] === 'success'){
 					window.localStorage.setItem('nowname',d1);
 					alert("创建账号成功！已登录到此账号：" + d1 + "，密码请熟记：" + d2 + " ！");
