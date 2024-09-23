@@ -58,8 +58,11 @@ document.getElementById('blogin').disabled = true;
 		if (d2.trim() !== '' || d1.trim() !== ''){
 			if (d3[d1 + '_password'] === 'null'){
 				var d4 = JSON.parse(pt('update',d1 + '_password',d2));
-				var d5 = JSON.parse(pt('update',d1 + '_ID',d2));
-				if (d4['status'] === 'success' && d5['status'] === 'success'){
+				var d5 = JSON.parse(pt('get','ID_count'));
+				d5['ID_count'] = String(Number('d5['ID_count']')‌ + 1);
+				var d6 = JSON.parse(pt('update',d1 + '_ID',d5['ID_count']));
+				var d7 = JSON.parse(pt('update','ID_count',d5[ID_count]))
+				if (d4['status'] === 'success' && d6['status'] === 'success' && d6['status'] === 'success'){
 					window.localStorage.setItem('nowname',d1);
 					alert("创建账号成功！已登录到此账号：" + d1 + "，密码请熟记：" + d2 + " ！");
 					login_do();
