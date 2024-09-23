@@ -1,0 +1,72 @@
+input {
+    		background-color: #ffffff;
+    		border: #0071ff solid 1px;
+    		color: black;
+			box-sizing: conte-box;
+		}
+		input:focus {
+    		border-style: solid;
+    		border-color: #03a9f4;
+    		box-shadow: 0 0 10px #f4a903;
+    		outline: none;
+		}
+        code {
+            color: #c7254e;
+            background-color: #f9f2f4;
+        }
+		.selects{
+			background:rgba(0,0,0,0.15);
+			border-radius:10px;
+			border:none;
+			font-family:"Microsoft YaHei UI light";
+		}
+		button {
+			background-color: #123456;
+			border: none;    
+    		color: white;
+			text-align: center;
+			display: inline-block;
+			border-radius:8px;
+			font-size: 15px;
+    	}
+	    button:focus{
+            background-color: #001234;
+			border: 2px;    
+    		color: white;
+			text-align: center;
+			display: inline-block;
+			border-radius:8px;
+			font-size: 15px;
+        }
+        .lanch{
+            background-color: #007eff;
+            color: white;
+            padding: 7px;
+	    text-align: right;
+	    margin-left: auto;
+	    margin: 0px;
+        }
+		.leoth{
+            background-color: #007eff;
+            margin: 0px;
+            color: white;
+            padding: 7px;
+	    margin-left: auto;
+        }
+	.phing{
+            background-color: #007eff;
+            margin: 0px;
+            color: white;
+            padding: 7px;
+	    text-align: center;
+	    margin-left: auto;
+        }
+	.blim{
+		background-color: #007eff;
+		display: none;
+		margin: 0px;
+		margin-left: auto;
+        color: white;
+        padding: 7px;
+		border-radius:10px;
+	}
