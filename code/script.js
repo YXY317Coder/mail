@@ -83,7 +83,7 @@ document.getElementById('blogin').disabled = true;
 	function breaklogin(){
 		window.localStorage.setItem('nowname','null');
 		alert('已退登！正在刷新网页。');
-		window.location.href = 'https://yxy317coder.github.io/chatroom/';
+		window.location.href = 'https://yxy317coder.github.io/mail/';
 	}
 	function login_do(){
 		var div = document.getElementById('chatdiv');
