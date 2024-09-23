@@ -31,8 +31,8 @@ input {
 			cursor: pointer;
     	}
 	    button:disabled {
-	  background-color: grey;
-	  color: lightgrey;
+	  background-color: #c3bed0;
+	  color: #ffffff;
 	  cursor: not-allowed;
 		    border: none;    
 		    text-align: center;
